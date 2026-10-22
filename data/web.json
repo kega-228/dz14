@@ -1,0 +1,122 @@
+﻿[
+  {
+    "id": 1,
+    "text": "Який тег використовується для створення гіперпосилання в HTML?",
+    "options": ["<link>", "<a>", "<href>", "<url>"],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Тег <a> (anchor) використовується спільно з атрибутом href для створення посилань."
+  },
+  {
+    "id": 2,
+    "text": "Яка властивість CSS відповідає за колір тексту?",
+    "options": ["text-color", "font-color", "color", "background-color"],
+    "correct": 2,
+    "points": 10,
+    "explanation": "Властивість color задає колір самого тексту елемента."
+  },
+  {
+    "id": 3,
+    "text": "Що означає абревіатура HTML?",
+    "options": ["HyperText Markup Language", "High Tech Multi Language", "Hyperlink and Text Management Language", "Home Tool Markup Language"],
+    "correct": 0,
+    "points": 10,
+    "explanation": "HTML розшифровується як мова гіпертекстової розмітки (HyperText Markup Language)."
+  },
+  {
+    "id": 4,
+    "text": "Який метод JS використовується для виведення даних у консоль?",
+    "options": ["print()", "console.log()", "document.write()", "window.alert()"],
+    "correct": 1,
+    "points": 10,
+    "explanation": "console.log() виводить інформацію в консоль розробника."
+  },
+  {
+    "id": 5,
+    "text": "Який протокол є захищеною версією HTTP?",
+    "options": ["FTP", "HTTPS", "SMTP", "SSH"],
+    "correct": 1,
+    "points": 10,
+    "explanation": "HTTPS (HyperText Transfer Protocol Secure) використовує шифрування для безпеки."
+  },
+  {
+    "id": 6,
+    "text": "Який символ використовується в CSS для вибору елемента за його ідентифікатором (id)?",
+    "options": [".", "#", "*", "@"],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Знак решітки (#) застосовується для звернення до елемента за унікальним id."
+  },
+  {
+    "id": 7,
+    "text": "Який тег в HTML виконує перенесення рядка?",
+    "options": ["<lb>", "<break>", "<br>", "<hr>"],
+    "correct": 2,
+    "points": 10,
+    "explanation": "Тег <br> створює розрив рядка в тексті."
+  },
+  {
+    "id": 8,
+    "text": "Яка властивість CSS задає внутрішні відступи елемента?",
+    "options": ["margin", "padding", "spacing", "border-spacing"],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Padding задає простір між вмістом елемента та його рамкою."
+  },
+  {
+    "id": 9,
+    "text": "Який метод масивів у JavaScript створює новий масив після перетворення кожного елемента колбеком?",
+    "options": ["filter()", "forEach()", "map()", "reduce()"],
+    "correct": 2,
+    "points": 10,
+    "explanation": "Метод map() викликає функцію для кожного елемента масиву і повертає новий масив."
+  },
+  {
+    "id": 10,
+    "text": "Який тег використовується для підключення зовнішнього файлу CSS?",
+    "options": ["<style>", "<script>", "<link>", "<css>"],
+    "correct": 2,
+    "points": 10,
+    "explanation": "Тег <link rel=\"stylesheet\" href=\"style.css\"> підключає таблицю стилів."
+  },
+  {
+    "id": 11,
+    "text": "Який тип даних у JavaScript не є примітивним?",
+    "options": ["string", "number", "boolean", "object"],
+    "correct": 3,
+    "points": 10,
+    "explanation": "Object (об'єкт) — складний тип даних, на відміну від рядків, чисел чи булевих значень."
+  },
+  {
+    "id": 12,
+    "text": "Що означає абревіатура CSS?",
+    "options": ["Computer Style Sheets", "Cascading Style Sheets", "Creative Style System", "Colorful Style Selector"],
+    "correct": 1,
+    "points": 10,
+    "explanation": "CSS розшифровується як каскадні таблиці стилів (Cascading Style Sheets)."
+  },
+  {
+    "id": 13,
+    "text": "Яка властивість CSS використовується для зміни шрифту елемента?",
+    "options": ["font-style", "font-family", "text-font", "font-weight"],
+    "correct": 1,
+    "points": 10,
+    "explanation": "font-family задає гарнітуру (назву) шрифту."
+  },
+  {
+    "id": 14,
+    "text": "Який оператор порівняння в JavaScript перевіряє як значення, так і тип даних?",
+    "options": ["==", "=", "===", "!="],
+    "correct": 2,
+    "points": 10,
+    "explanation": "Суворе рівність (===) перевіряє і значення, і тип даних без їх приведення."
+  },
+  {
+    "id": 15,
+    "text": "За допомогою якого тегу в HTML додається зображення?",
+    "options": ["<image>", "<img>", "<src>", "<pic>"],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Тег <img> використовується для вставки зображень із атрибутом src."
+  }
+]

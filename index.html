@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Вікторина на час</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/app.js" type="module" defer></script>
+</head>
+<body>
+
+<div id="status">
+    <p id="loading" hidden>Завантаження...</p>
+    <p id="error"></p>
+    <button type="button" id="retryButton" hidden>Спробувати ще раз</button>
+</div>
+
+<section id="startScreen" class="screen">
+    <form id="startForm" class="card" novalidate>
+        <h1>Вікторина на час</h1>
+
+        <div class="field">
+            <input type="text" id="nameInput" name="playerName" data-field="name"
+                   placeholder="Ім'я гравця" aria-label="Ім'я гравця" autocomplete="given-name">
+            <p class="field-error" id="nameError"></p>
+        </div>
+
+        <div class="field">
+            <select id="categorySelect" name="category" data-field="category" aria-label="Категорія">
+                <option value="">Оберіть категорію</option>
+            </select>
+            <p class="field-error" id="categoryError"></p>
+        </div>
+
+        <div class="field">
+            <input type="number" id="questionCountInput" name="questionCount" data-field="count"
+                   min="3" step="1" placeholder="Кількість питань" aria-label="Кількість питань">
+            <p class="field-error" id="countError"></p>
+        </div>
+
+        <button type="submit" id="startButton">Почати</button>
+    </form>
+</section>
+
+<section id="quizScreen" class="screen" hidden>
+    <div class="quiz-header">
+        <span id="progress"></span>
+        <span id="timer"></span>
+        <span id="score"></span>
+    </div>
+
+    <h2 id="questionText"></h2>
+
+    <div id="optionsContainer"></div>
+
+    <p id="feedback"></p>
+</section>
+
+<section id="resultScreen" class="screen" hidden>
+    <div class="card">
+        <h2>Гру завершено!</h2>
+        <p id="recordMessage" hidden>Новий рекорд!</p>
+
+        <dl class="stats">
+            <div class="stat"><dt>Гравець</dt><dd id="resultPlayer"></dd></div>
+            <div class="stat"><dt>Категорія</dt><dd id="resultCategory"></dd></div>
+            <div class="stat"><dt>Бали</dt><dd id="resultScore"></dd></div>
+            <div class="stat"><dt>Правильні відповіді</dt><dd id="resultCorrect"></dd></div>
+            <div class="stat"><dt>Тривалість</dt><dd id="resultDuration"></dd></div>
+        </dl>
+
+        <p id="bestScore"></p>
+    </div>
+
+    <div class="card">
+        <h3>Ваші відповіді</h3>
+        <ul id="reviewList"></ul>
+    </div>
+
+    <div class="card">
+        <h3>Останні 5 ігор</h3>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Гравець</th>
+                    <th>Категорія</th>
+                    <th>Бали</th>
+                    <th>Правильні</th>
+                </tr>
+                </thead>
+                <tbody id="historyBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="actions">
+        <button type="button" id="playAgainButton">Грати ще</button>
+        <button type="button" id="toStartButton" class="secondary">На старт</button>
+    </div>
+</section>
+
+</body>
+</html>

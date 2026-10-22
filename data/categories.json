@@ -1,0 +1,5 @@
+[
+  { "id": "geo", "name": "Географія", "file": "geo.json", "timePerQuestion": 15 },
+  { "id": "web", "name": "Веб-технології", "file": "web.json", "timePerQuestion": 20 },
+  { "id": "his", "name": "Історія", "file": "his.json", "timePerQuestion": 25 }
+]
